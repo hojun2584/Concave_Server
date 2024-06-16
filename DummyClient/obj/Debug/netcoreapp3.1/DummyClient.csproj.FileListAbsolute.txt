@@ -1,0 +1,17 @@
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.exe
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.deps.json
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.runtimeconfig.json
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.runtimeconfig.dev.json
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.dll
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\DummyClient.pdb
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.dll
+C:\Games\PacketSession\DummyClient\bin\Debug\netcoreapp3.1\ServerCore.pdb
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.AssemblyReference.cache
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.AssemblyInfoInputs.cache
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.AssemblyInfo.cs
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.CoreCompileInputs.cache
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.csproj.CopyComplete
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.dll
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.pdb
+C:\Games\PacketSession\DummyClient\obj\Debug\netcoreapp3.1\DummyClient.genruntimeconfig.cache
