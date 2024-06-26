@@ -19,8 +19,6 @@ namespace ServerCore
                 return instance;
             }
         }
-
-
         public Action JobAction
         {
             get

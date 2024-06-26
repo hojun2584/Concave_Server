@@ -8,3 +8,13 @@ C:\Games\PacketSession\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.AssemblyInf
 C:\Games\PacketSession\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.CoreCompileInputs.cache
 C:\Games\PacketSession\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.dll
 C:\Games\PacketSession\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.pdb
+C:\Games\PacketSession\Concave_Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.deps.json
+C:\Games\PacketSession\Concave_Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.dll
+C:\Games\PacketSession\Concave_Server\ServerCore\bin\Debug\netcoreapp3.1\ServerCore.pdb
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.AssemblyReference.cache
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.AssemblyInfoInputs.cache
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.AssemblyInfo.cs
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.csproj.CoreCompileInputs.cache
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.dll
+C:\Games\PacketSession\Concave_Server\ServerCore\obj\Debug\netcoreapp3.1\ServerCore.pdb

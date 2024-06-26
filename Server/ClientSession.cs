@@ -118,20 +118,10 @@ namespace Server
 
 						myPacket.Read(buffer);
 
-
-                        //ushort stringSize = BitConverter.ToUInt16(buffer.Array, buffer.Offset + pos);
-                        //Console.WriteLine($"stringSize : {stringSize}");
-                        //pos += 2;
-
-                        //readTest = Encoding.Unicode.GetString(buffer.Array, pos, stringSize);
-                        //Console.WriteLine($"receivString : {readTest}");
-                        //pos += stringSize;
-
                     }
                     break;
 					case PacketID.MakeStone:
 					{
-
 
 						MakeSton myPacket = new MakeSton();
 						myPacket.Read(buffer);

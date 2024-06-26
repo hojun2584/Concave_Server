@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Games\\PacketSession\\DummyClient\\DummyClient.csproj": {}
+    "C:\\Games\\PacketSession\\Concave_Server\\DummyClient\\DummyClient.csproj": {}
   },
   "projects": {
-    "C:\\Games\\PacketSession\\DummyClient\\DummyClient.csproj": {
+    "C:\\Games\\PacketSession\\Concave_Server\\DummyClient\\DummyClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Games\\PacketSession\\DummyClient\\DummyClient.csproj",
+        "projectUniqueName": "C:\\Games\\PacketSession\\Concave_Server\\DummyClient\\DummyClient.csproj",
         "projectName": "DummyClient",
-        "projectPath": "C:\\Games\\PacketSession\\DummyClient\\DummyClient.csproj",
+        "projectPath": "C:\\Games\\PacketSession\\Concave_Server\\DummyClient\\DummyClient.csproj",
         "packagesPath": "C:\\Users\\hojun\\.nuget\\packages\\",
-        "outputPath": "C:\\Games\\PacketSession\\DummyClient\\obj\\",
+        "outputPath": "C:\\Games\\PacketSession\\Concave_Server\\DummyClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Games\\PacketSession\\ServerCore\\ServerCore.csproj": {
-                "projectPath": "C:\\Games\\PacketSession\\ServerCore\\ServerCore.csproj"
+              "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\ServerCore.csproj": {
+                "projectPath": "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\ServerCore.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Games\\PacketSession\\ServerCore\\ServerCore.csproj": {
+    "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\ServerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Games\\PacketSession\\ServerCore\\ServerCore.csproj",
+        "projectUniqueName": "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\ServerCore.csproj",
         "projectName": "ServerCore",
-        "projectPath": "C:\\Games\\PacketSession\\ServerCore\\ServerCore.csproj",
+        "projectPath": "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\ServerCore.csproj",
         "packagesPath": "C:\\Users\\hojun\\.nuget\\packages\\",
-        "outputPath": "C:\\Games\\PacketSession\\ServerCore\\obj\\",
+        "outputPath": "C:\\Games\\PacketSession\\Concave_Server\\ServerCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
