@@ -56,6 +56,7 @@ namespace DummyClient
 		{
 			Console.WriteLine($"Transferred bytes: {numOfBytes}");
 		}
+
 	}
 
 }

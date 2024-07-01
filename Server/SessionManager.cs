@@ -25,12 +25,20 @@ namespace Server
                 session.SessionId = sessionId;
                 playerSession.Add (id, session);
 
-                Console.WriteLine($"Connected : {id}");
+                Console.WriteLine($"Connected session Id : {id}");
 
                 return session;
             }
-
         }
+
+        public void BroadCast( ArraySegment<byte> buffer , ClientSession packetOwner = null)
+        {
+            foreach (var player in playerSession.Values)
+            {
+                player.Send(buffer);
+            }
+        }
+
 
         public ClientSession Find(int id)
         {

@@ -11,8 +11,9 @@ namespace ServerCore
 	{
 		public static readonly int HeaderSize = 2;
 
-		// [size(2)][packetId(2)][ ... ][size(2)][packetId(2)][ ... ]
-		public sealed override int OnRecv(ArraySegment<byte> buffer)
+
+        // [size(2)][packetId(2)][ ... ][size(2)][packetId(2)][ ... ]
+        public sealed override int OnRecv(ArraySegment<byte> buffer)
 		{
 			int processLen = 0;
 
@@ -42,7 +43,9 @@ namespace ServerCore
 
 	public abstract class Session
 	{
-		Socket _socket;
+        public int SessionId { get; set; }
+
+        Socket _socket;
 		int _disconnected = 0;
 
 		RecvBuffer _recvBuffer = new RecvBuffer(1024);
@@ -61,7 +64,6 @@ namespace ServerCore
 		public void Start(Socket socket)
 		{
 			_socket = socket;
-
 			_recvArgs.Completed += new EventHandler<SocketAsyncEventArgs>(OnRecvCompleted);
 			_sendArgs.Completed += new EventHandler<SocketAsyncEventArgs>(OnSendCompleted);
 
@@ -141,6 +143,7 @@ namespace ServerCore
 			bool pending = _socket.ReceiveAsync(_recvArgs);
 			if (pending == false)
 				OnRecvCompleted(null, _recvArgs);
+
 		}
 
 		void OnRecvCompleted(object sender, SocketAsyncEventArgs args)

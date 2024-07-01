@@ -10,7 +10,6 @@ using ServerCore;
 namespace Server
 {
 
-
     class Packet
 	{
 		public ushort size;
@@ -46,14 +45,11 @@ namespace Server
 	class ClientSession : PacketSession
 	{
 
-		public int SessionId { get; set; }
 		public GameRoom Room { get; set; }
-
 		public bool isMaster = false;
 
-
-		string readTest;
-
+        string readTest;
+		
 
         public override void OnConnected(EndPoint endPoint)
 		{
@@ -66,72 +62,42 @@ namespace Server
 			int pos = 0;
 
 			ushort size = BitConverter.ToUInt16(buffer.Array, buffer.Offset); 
-			pos += 2;
+			pos += sizeof(ushort);
 			ushort id = BitConverter.ToUInt16(buffer.Array, buffer.Offset + pos);
-			pos += 2;
+			pos += sizeof(ushort);
 
-			// TODO
-			switch ((PacketID)id)
+            // TODO
+            switch ((PacketID)id)
 			{
-				case PacketID.PlayerInfoReq:
-					{
-						long playerId = BitConverter.ToInt64(buffer.Array, buffer.Offset + pos);
-						pos += 8;
-					}
-					break;
-				case PacketID.PlayerInfoOk:
-					{
-						int hp = BitConverter.ToInt32(buffer.Array, buffer.Offset + pos);
-						pos += 4;
-						int attack = BitConverter.ToInt32(buffer.Array, buffer.Offset + pos);
-						pos += 4;
-                        Console.WriteLine($"hp {hp} , attack {attack}");
-                    }
-					//Handle_PlayerInfoOk();
-					break;
-				case PacketID.playerPos:
-					{
-                        
-                        //int x = BitConverter.ToInt32(buffer.Array, buffer.Offset + pos);
-                        //pos += 4;
-                        //Console.WriteLine($"Pos x : {x}");
-
-						ushort stringSize = BitConverter.ToUInt16(buffer.Array, buffer.Offset + pos);
-                        Console.WriteLine($"stringSize : {stringSize}");
-                        pos += 2;
-                        readTest = Encoding.Unicode.GetString(buffer.Array, pos, stringSize);
-                        Console.WriteLine($"pos : {pos}, stringsize : {stringSize}");
-
-                        Console.WriteLine($"receivString : {readTest}");
-                        Console.WriteLine($"readTestLength : {readTest.Length}");
-                        pos += stringSize;
-
-                        int maxhp = BitConverter.ToInt32(buffer.Array, buffer.Offset + pos);
-						Console.WriteLine($"maxhp = {maxhp}");
-                    }
-					break;
                 case PacketID.RpcPacket:
 					{
 
-						
 						RPCPacket myPacket = new RPCPacket();
 
 						myPacket.Read(buffer);
+
+						SessionManager.Instance.BroadCast(myPacket.BroadCastWrite());
 
                     }
                     break;
 					case PacketID.MakeStone:
 					{
+						MakeStone stone = new MakeStone();
 
-						MakeSton myPacket = new MakeSton();
-						myPacket.Read(buffer);
+						stone.Read(buffer);
 
                         foreach (var player in Room.playerList)
                         {
 							if (player != this)
 								player.Send(buffer);
                         }
-						Send(buffer);
+                        foreach (var crowd in Room.crowdList)
+                        {
+							crowd.Send(buffer);
+                        }
+                        Send(buffer);
+
+						Room.NextTurn();
                     }
                     break;
 				default:
